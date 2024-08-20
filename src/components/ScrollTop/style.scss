@@ -1,0 +1,21 @@
+@import '../../bixie-shared/styles/general.scss';
+
+.scroll-top {
+  position: fixed;
+  right: 3rem;
+  bottom: 5rem;
+
+  @include center-box(3rem);
+  background-color: rgba($color: white, $alpha: 0.1);
+  border-radius: 50%;
+  z-index: 9000;
+  box-shadow: 2px 1px 5px black;
+
+  opacity: 0;
+  transition: all 0.2s ease-in;
+
+  &[data-visible=true] {
+    opacity: 1;
+    bottom: 5.5rem;
+  }
+}

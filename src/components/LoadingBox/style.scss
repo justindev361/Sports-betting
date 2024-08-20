@@ -1,0 +1,17 @@
+.loading-box {
+  @apply w-screen h-screen flex justify-center items-center;
+  @apply bg-black;
+  @apply text-4xl;
+  @apply translate-y-[-10%];
+  animation: loading-animation 2s ease-in-out infinite;
+}
+
+@keyframes loading-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

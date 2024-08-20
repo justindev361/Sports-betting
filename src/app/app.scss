@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #00b2ea;
+  --info-color: #14ff00;
+  --text-color: #333;
+  --background-color: #ccc;
+}
+
+$green: #86bb71;
+$blue: #94c2ed;
+$orange: #e38968;
+$gray: #92959e;
+
+:root[data-theme=dark] {
+  --primary-color: #1a390f;
+  --info-color: #5bef00;
+  --warning-color: #e33d38;
+  --text-color: #fff;
+  --background-color: rgba(26, 1, 1, 0.95);
+  --sport-button-background-color: #1e1e1e;
+  --menu-background-color: #091704;
+  --dark-gray-color: #2f3132;
+  --light-gray-color: #d9d9d9;
+  --betnow-button-background: #5bef00;
+  --betnwo-button-color: #171717;
+  --footer-background-color: #142811;
+  --footer-selection-color: #0e6016;
+  --footer-button-color: #a9a7b9;
+  --card-border-color: #295323;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  font-size: 0.75rem;
+}
+
+.loading-text {
+  @apply w-full;
+  @apply flex justify-center pt-[5rem] text-[1.5rem] gap-4;
+  // display: flex;
+  // justify-content: center;
+  // padding-top: 5rem;
+  // font-size: 1.5rem;
+  // gap: 1rem;
+}

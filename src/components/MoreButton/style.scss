@@ -1,0 +1,13 @@
+.more-button {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+
+  border-radius: 50%;
+  background: #333;
+}

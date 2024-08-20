@@ -1,0 +1,41 @@
+.info-box {
+  // width: 100%;
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  border: 1px solid #3a671e;
+  gap: 1rem;
+
+  cursor: pointer;
+
+  @media (min-width: 425px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .field-text {
+    display: none;
+    font-size: 13px;
+    color: var(--footer-button-color);
+
+    @media (min-width: 425px) {
+      display: block;
+    }
+  }
+
+  .value-text {
+    font-size: 13px;
+    color: white;
+  }
+
+  &.selected {
+    background-color: darkorange;
+    border-color: white;
+
+    span {
+      color: black;
+    }
+  }
+}

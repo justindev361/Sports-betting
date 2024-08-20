@@ -1,0 +1,36 @@
+.j-footer {
+  position: fixed;
+  bottom: 2rem;
+  left: 50vw;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  width: calc(100vw - 3.25rem);
+  max-width: 768px;
+  height: 4rem;
+  background-color: var(--footer-background-color);
+  border-radius: 4rem;
+  z-index: 100;
+  @apply max-w-[600px];
+
+  .footer-button {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+  }
+
+  .footer-button.selected {
+    background-color: var(--footer-selection-color);
+    opacity: 1;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0 0.5rem;
+  }
+}

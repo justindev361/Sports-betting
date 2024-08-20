@@ -1,0 +1,159 @@
+.closed-single-card {
+  @apply relative flex flex-col p-6 pt-10 w-full gap-1 rounded-2xl;
+  border: 1px solid var(--card-border-color);
+
+  .result-box {
+    @apply absolute left-[50%] top-0 data-[status=WON]:bg-[#2AC671] data-[status=LOSS]:bg-[red] px-3 py-1 rounded-b-md translate-x-[-50%];
+  }
+
+  >.team-info {
+    @apply flex justify-between items-start self-stretch relative;
+    @apply sm:min-w-[360px] lg:min-w-[400px];
+
+    >.top-box {
+      @apply flex pb-1 justify-between items-center absolute top-4 left-[50%] translate-x-[-50%];
+
+      >.date-box {
+        @apply text-white text-[10px];
+      }
+    }
+
+    >.team-box {
+      @apply flex flex-col justify-center items-start min-w-20 max-w-[7.5rem] gap-1;
+      @apply min-[425px]:w-24;
+
+      >.team-name {
+        @apply text-[13px] font-extrabold break-words;
+      }
+
+      >.team-img {
+        @apply w-[3.5rem] h-[3.5rem] object-cover;
+      }
+
+      &.home-team {
+        align-items: flex-end;
+        text-align: right;
+      }
+
+      &.away-team {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .h-line {
+    border-top: 1px solid var(--card-border-color);
+    @apply h-[1px] my-2;
+  }
+
+  .bet-info {
+    @apply flex items-center gap-4;
+    @apply sm:ml-auto;
+
+    .bet-info-box {
+      @apply flex flex-col gap-2;
+
+      :first-child {
+        @apply text-[13px];
+      }
+
+      :last-child {
+        @apply text-[19px] font-thin;
+      }
+    }
+
+    .claim-box {
+      @apply flex flex-col ml-auto gap-2;
+
+      .payout-box {
+        @apply text-[18px] data-[status=WON]:text-[#5BEF00] data-[status=LOSS]:text-[red];
+      }
+    }
+  }
+
+  @apply sm:flex-row;
+}
+
+.closed-parlay-card {
+  @apply relative flex flex-col p-6 pt-10 w-full gap-1 rounded-2xl;
+  border: 1px solid var(--card-border-color);
+
+  .result-box {
+    @apply absolute left-[50%] top-0 data-[status=WON]:bg-[#2AC671] data-[status=LOSS]:bg-[red] px-3 py-1 rounded-b-md translate-x-[-50%];
+  }
+
+  .team-info {
+    @apply flex justify-between items-start self-stretch relative;
+    @apply sm:min-w-[360px] lg:min-w-[400px];
+
+    >.top-box {
+      @apply flex pb-1 justify-between items-center absolute top-4 left-[50%] translate-x-[-50%];
+
+      >.date-box {
+        @apply text-white text-[10px];
+      }
+    }
+
+    >.team-box {
+      @apply flex flex-col justify-center items-start min-w-20 max-w-[7.5rem] gap-1;
+      @apply min-[425px]:w-24;
+
+      >.team-name {
+        @apply text-[13px] font-extrabold break-words;
+      }
+
+      >.team-img {
+        @apply w-[3.5rem] h-[3.5rem] object-cover;
+      }
+
+      &.home-team {
+        align-items: flex-end;
+        text-align: right;
+      }
+
+      &.away-team {
+        align-items: flex-start;
+      }
+    }
+
+  }
+
+  .h-line {
+    border-top: 1px solid var(--card-border-color);
+    @apply h-[1px] my-2;
+  }
+
+  .h-line-dotted {
+    border-top: 1px dotted var(--card-border-color);
+    @apply h-[1px] my-2;
+  }
+
+  .bet-info {
+    @apply flex items-center gap-4;
+    @apply sm:ml-auto;
+
+    .bet-info-box {
+      @apply flex flex-col gap-2;
+
+      :first-child {
+        @apply text-[13px];
+      }
+
+      :last-child {
+        @apply text-[19px] font-thin;
+      }
+    }
+
+    .claim-box {
+      @apply flex flex-col ml-auto gap-2;
+
+      .payout-box {
+        @apply text-[18px] data-[status=WON]:text-[#5BEF00] data-[status=LOSS]:text-[red];
+      }
+    }
+
+    &.claim {
+      @apply justify-end;
+    }
+  }
+}

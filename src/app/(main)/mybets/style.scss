@@ -1,0 +1,25 @@
+.mybets-page {
+  max-height: calc(100vh - 160px);
+  @apply overflow-y-auto;
+
+  .dashboard {
+    @apply flex flex-col gap-2 p-4;
+    @apply max-w-[768px] mx-auto;
+  }
+
+  .leader-info-box {
+    display: flex;
+    border: 1px solid #3a671e;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .main-border {
+    border: 1px solid #3a671e;
+  }
+}

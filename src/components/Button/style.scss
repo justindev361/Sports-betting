@@ -1,0 +1,40 @@
+@import '../../bixie-shared/styles/general.scss';
+
+.j-button {
+  @include center-box();
+  min-height: 58px;
+  padding: 4px 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.1s ease-in;
+  gap: 1rem;
+  width: 100%;
+
+  .loading-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  img:nth-child(2) {
+    margin-right: -10px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 375px) {
+    min-height: 48px;
+    padding: 4px 30px;
+    font-size: 15px;
+  }
+}

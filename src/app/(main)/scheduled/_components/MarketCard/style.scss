@@ -1,0 +1,50 @@
+.market-card {
+  @apply flex p-2 flex-col justify-center items-center gap-5 relative w-full h-full;
+  @apply max-w-[425px] sm:min-w-[320px] sm:max-w-none sm:w-[600px] lg:max-w-[425px];
+  @apply min-[375px]:p-6;
+
+  border: 1px solid rgba($color: #295323, $alpha: 0.5);
+  border-radius: 1rem;
+
+
+  .favorite-box {
+    @apply absolute top-4 right-4 z-50;
+  }
+
+  >.team-info {
+    @apply flex justify-between items-start self-stretch relative;
+    @apply min-w-[280px];
+    @apply sm:min-w-[300px] sm:mx-auto;
+
+    >.top-box {
+      @apply flex flex-col gap-1 mb-3 pb-1 justify-between items-center absolute top-2 left-[50%] translate-x-[-50%];
+
+      >.date-box {
+        @apply text-white text-[10px];
+      }
+    }
+
+    @apply flex justify-between items-start self-stretch;
+
+    >.team-box {
+      @apply flex flex-col justify-center items-center min-w-20 max-w-[7.5rem] gap-1 text-center;
+      @apply w-[100px] min-[425px]:w-24;
+
+      >.team-name {
+        @apply text-[13px] font-extrabold break-words;
+      }
+
+      >.team-img {
+        @apply w-[3.5rem] h-[3.5rem] object-cover;
+      }
+    }
+  }
+
+  >.odds-box {
+    @apply flex pt-1 justify-center items-center gap-2 self-stretch;
+
+    .info-box {
+      @apply w-full;
+    }
+  }
+}

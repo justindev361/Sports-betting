@@ -1,0 +1,22 @@
+.sport-list {
+  padding: 0.5rem 0;
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  z-index: 10;
+  @apply max-w-[1429px];
+
+  
+  .sport-list-skeleton {
+    height: 2rem;
+    opacity: 0.1;
+  }
+  
+  .sport-list-content {
+    margin: 0 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: flex;
+    gap: 0.5rem;
+  }
+}

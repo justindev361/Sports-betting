@@ -1,0 +1,104 @@
+.today-match {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  margin-top: 2rem;
+  gap: 2.5rem;
+  background-color: #543838;
+  border-radius: 10px;
+  .today-match-bg {
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 1.5rem;
+  }
+
+  .today-match-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .league-name {
+      font-size: 11px;
+      max-width: 4rem;
+    }
+
+    .date-box {
+      padding: 0.25rem 0.5rem;
+      background-color: var(--warning-color);
+      font-size: 12px;
+    }
+  }
+
+  .today-match-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .match-info {
+      background-color: var(--dark-gray-color);
+      border-radius: 1.5rem;
+      padding: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .team-logo {
+        width: 2.25rem;
+        height: 2.25rem;
+        background-color: var(--light-gray-color);
+        border-radius: 50%;
+      }
+
+      span {
+        letter-spacing: -10%;
+        font-size: 13px;
+        font-weight: bolder;
+        font-style: italic;
+      }
+    }
+
+    .betnow-button {
+      background-color: var(--betnow-button-background);
+      padding: 0.25rem 1rem;
+      border-radius: 2rem;
+      color: var(--betnwo-button-color);
+      font-size: 13px;
+      font-weight: bold;
+    }
+  }
+
+  .main-info {
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .team-name-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      .team-name-small {
+        font-size: 20px;
+        line-height: 21px;
+      }
+    }
+
+    .datetime-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  display: flex;
+  // @media (min-height: 900px) {
+  // }
+}

@@ -1,0 +1,55 @@
+.j-select {
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+
+  .select-view {
+    background-color: #740000;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+  }
+
+  .select-content {
+    position: absolute;
+    z-index: 100;
+    margin-top: 0.5rem;
+    min-width: 100%;
+    max-height: 120px;
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    @media (min-height:800px) {
+      max-height: 200px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transform-origin: 50% 0;
+    transform: scale(0.9, 0.9);
+
+    transition: all 0.1s ease-in;
+    background-color: #222;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+
+    box-shadow: 2px 1px 4px black;
+
+    .select-item {
+      text-align: left;
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+
+    &[data-visible=true] {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+}

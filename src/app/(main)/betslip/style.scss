@@ -1,0 +1,64 @@
+.betslip-page {
+  @apply flex flex-col items-center gap-4 p-2 relative;
+  @apply min-[375px]:p-5;
+  @apply max-w-[680px] mx-auto;
+
+  max-height: calc(100vh - 160px);
+  @apply overflow-y-auto;
+
+  &::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply bg-white/20 rounded-lg;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-black/60 rounded-xl;
+  }
+
+  .bet-type-box {
+    @apply flex justify-center items-center;
+
+    label span {
+      margin-right: 0;
+    }
+
+    .bet-type-label {
+      @apply w-full text-white py-2;
+    }
+
+    .bet-type-label:first-child {
+      @apply pr-4 text-right;
+    }
+
+    .bet-type-label:last-child {
+      padding-left: 1rem;
+    }
+  }
+
+  .bet-list {
+    @apply w-full flex flex-col gap-4;
+
+    .bet-pay-pair {
+      @apply flex flex-col gap-2;
+    }
+  }
+
+  .available-balance-box {
+    width: 100%;
+    max-width: 425px;
+    display: flex;
+    justify-content: space-between;
+
+    >.right-box {
+      display: flex;
+      gap: 0.5rem;
+
+      >.currency {
+        color: rgba($color: white, $alpha: 0.5);
+      }
+    }
+  }
+}

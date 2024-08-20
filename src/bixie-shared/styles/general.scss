@@ -1,0 +1,17 @@
+@mixin center-box($width: null, $height: null) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @if ($width !=null) {
+    width: $width;
+
+    @if ($height ==null) {
+      height: $width;
+    }
+  }
+
+  @if ($height !=null) {
+    height: $height;
+  }
+}
